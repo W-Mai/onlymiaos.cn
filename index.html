@@ -1,31 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎来到米奇妙妙屋</title>
+    <title>OnlyMiaos</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <header class="bg-gray-800 p-4">
-        <img src="banner.jpg" alt="Banner" class="w-full h-48 object-cover rounded-lg">
-    </header>
-    <main class="container mx-auto mt-8">
-        <div class="flex items-center mb-8">
-            <img src="avatar.webp" alt="头像" class="w-20 h-20 rounded-full mr-4">
-            <div>
-                <h1 class="text-2xl font-bold text-gray-800">Miaos</h1>
-                <p class="text-gray-600">欢迎来到米奇妙妙屋</p>
+<body class="bg-gray-50">
+    <header class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center py-4">
+                <span class="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">OnlyMiaos</span>
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <img src="/images/1.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-lg">
-            <img src="/images/2.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-lg">
-            <img src="/images/3.jpg" alt="Image 3" class="w-full h-auto rounded-lg shadow-lg">
-            <img src="/images/4.jpg" alt="Image 4" class="w-full h-auto rounded-lg shadow-lg">
-            <img src="/images/5.jpg" alt="Image 5" class="w-full h-auto rounded-lg shadow-lg">
-            <img src="/images/6.jpg" alt="Image 5" class="w-full h-auto rounded-lg shadow-lg">
+    </header>
+
+    <section class="bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4 py-12 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">Miaos 的摄影与猫咪日常</h1>
+                    <p class="text-gray-600 text-lg md:text-xl">记录相机下的瞬间与猫咪的温柔日常</p>
+                    <div class="mt-5 flex flex-wrap items-center gap-3">
+                        <span class="inline-flex items-center px-4 py-1 rounded-full text-white bg-gradient-to-r from-blue-500 to-indigo-600 text-sm font-semibold">欢迎来到米奇妙妙屋</span>
+                        <a href="https://github.com/WangSimiao2000" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-100">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 010 5.656l-3 3a4 4 0 11-5.656-5.656l1.5-1.5M10.172 13.828a4 4 0 010-5.656l3-3a4 4 0 115.656 5.656l-1.5 1.5" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://space.bilibili.com/36913332" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:bg-gray-100">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 3h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm6.752 7.168l-4.197-2.398A1 1 0 006 8.67v4.66a1 1 0 001.555.832l4.197-2.398a1 1 0 000-1.664z" />
+                            </svg>
+                            哔哩哔哩
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="banner.jpg" alt="横幅" class="w-full h-80 object-cover rounded-2xl shadow-lg">
+                </div>
+            </div>
         </div>
+    </section>
+
+    <main class="container mx-auto px-4">
+        <h2 class="mt-8 text-2xl font-bold text-gray-900">摄影作品</h2>
+        <div class="mt-4">
+            <div class="bg-white rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition">
+                <img src="images/1.jpg" alt="相机摄影作品" class="w-full h-80 md:h-96 object-cover rounded-2xl">
+            </div>
+        </div>
+
+        <h2 class="mt-10 text-2xl font-bold text-gray-900">猫咪相册</h2>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition"><img src="images/2.jpg" alt="猫咪照 2" class="w-full h-48 object-cover rounded-2xl"></div>
+            <div class="rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition"><img src="images/3.jpg" alt="猫咪照 3" class="w-full h-48 object-cover rounded-2xl"></div>
+            <div class="rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition"><img src="images/4.jpg" alt="猫咪照 4" class="w-full h-48 object-cover rounded-2xl"></div>
+            <div class="rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition"><img src="images/5.jpg" alt="猫咪照 5" class="w-full h-48 object-cover rounded-2xl"></div>
+            <div class="rounded-2xl shadow hover:shadow-xl transform hover:-translate-y-0.5 transition"><img src="images/6.jpg" alt="猫咪照 6" class="w-full h-48 object-cover rounded-2xl"></div>
+        </div>
+
+        <footer class="mt-12 py-8 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-3">
+                <a href="#" class="hover:text-gray-700">关于</a>
+                <a href="#" class="hover:text-gray-700">帮助与支持</a>
+                <a href="#" class="hover:text-gray-700">隐私</a>
+                <a href="#" class="hover:text-gray-700">条款</a>
+            </div>
+            <div>© 2025 OnlyMiaos</div>
+        </footer>
     </main>
 </body>
 </html>
